@@ -63,5 +63,66 @@
             </tr>
         </tbody>
     </table>
+
+    <!-- The registration form should have:
+
+Name, email, password, and date fields.
+A dropdown, radio buttons, and checkboxes.
+Proper labels and placeholders.
+Required fields and validation attributes. -->
+    <h2>Register Here</h2>
+    <form action="submit.php" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password" required>
+        <br><br>
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date" required>
+        <br><br>
+        <label
+            for="gender">Gender</label>
+        <select
+            name="gender"
+            id="gender"
+            required
+        >
+            <option value="">Select
+                gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <br><br>
+        <label for="entity">Entity</label>
+        <input type="radio" name="entity" value="individual" id="individual" required>
+        <label for="individual">Individual</label>
+        <input type="radio" name="entity" value="business" id="business" required>
+        <label for="business">Business</label>
+        <br><br>
+        <label for="services">Required Services</label>
+        <input type="checkbox" name="services[]" value="web development" id="web development" required>
+        <label for="web development">Web Development</label>
+        <input type="checkbox" name="services[]" value="mobile app development" id="mobile app dev" required>
+        <label for="mobile app develoment">Mobile App Development</label>
+        <input type="checkbox" name="services[]" value="branding" id="branding" required>
+        <label for="branding">Branding</label>
+        <input type="checkbox" name="services[]" value="graphic design" id="graphic design" required>
+        <label for="graphic design">Graphic Design</label>
+        <input type="checkbox" name="services[]" value="digital marketing" id="digital marketing" required>
+        <label for="digital marketing">Digital Marketing</label>
+        <br><br>
+        <button type="submit">Register</button>
+
+
+
+
+
+
+
+    
 </body>
 </html>
